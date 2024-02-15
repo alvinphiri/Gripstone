@@ -24,6 +24,26 @@ section {
     background-color: #333333; /* Dark Gray */
     border-radius: 10px;
 }
+@media screen and (max-width: 768px) {
+    section {
+        padding: 15px;
+    }
+}
+/* Responsive styling for Core Values Section */
+section > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    section > div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 
 table {
     width: 80%;
@@ -87,13 +107,26 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin: 20px auto;
 }
+
 
 .profile-card {
     text-align: center;
     margin: 20px;
+    overflow: hidden;
+    position: relative;
+    flex: 0 0 calc(33.333% - 40px);
     transition: transform 0.3s;
 }
+
+@media screen and (max-width: 768px) {
+    .profile-card {
+        flex: 0 0 calc(100% - 40px);
+    }
+}
+
+
 
 .profile-card img {
     width: 150px;
@@ -110,13 +143,27 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-}
+    margin: 20px auto;
 
+}
+/* Responsive styling for Services Section */
 .service-card {
     text-align: center;
     margin: 20px;
+    overflow: hidden;
+    position: relative;
     transition: transform 0.3s;
+    flex: 0 0 calc(33.333% - 40px);
 }
+
+@media screen and (max-width: 768px) {
+    .service-card {
+        flex: 0 0 calc(100% - 40px);
+    }
+}
+
+
+
 
 .service-card img {
     width: 150px;

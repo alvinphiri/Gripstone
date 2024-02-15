@@ -1,0 +1,130 @@
+body {
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+    font-family: Arial, sans-serif; /* Use a common sans-serif font */
+}
+
+header {
+    background-color: #4CAF50; /* Primary Green */
+    color: #FFFFFF; /* White text */
+    text-align: center;
+    padding: 20px;
+}
+h1, h2, h3 {
+    color: #4CAF50; /* Primary Green */
+}
+
+p {
+    line-height: 1.5;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #333333; /* Dark Gray */
+    border-radius: 10px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50; /* Primary Green */
+}
+
+tr:nth-child(even) {
+    background-color: #333333; /* Dark Gray */
+}
+
+.official-docs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.doc-card {
+    text-align: center;
+    margin: 20px;
+}
+
+.doc-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+button {
+    padding: 1em 2em;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+.management-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-card {
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s;
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-card:hover {
+    transform: scale(1.1);
+}
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s;
+}
+
+.service-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.service-card:hover {
+    transform: scale(1.1);
+}

@@ -10,7 +10,23 @@
     <body>
         <header>
             <h1>Gripstone Security</h1>
+            <nav>
+                <a href="#vision">Vision</a>
+                <a href="#mission">Mission</a>
+                <a href="#core-values">Core Values</a>
+                <a href="#about">About Us</a>
+                <a href="#management">Management</a>
+                <a href="#services">Services</a>
+                <a href="#security-guard-service">Security Guard Service</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#official">Official</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+        
+            <!-- Scroll-to-Top Button -->
+            <div class="scroll-to-top">&#9650; Scroll to Top</div>
             <p>Your Guardian of Security</p>
+
         </header>
     
         <section>
@@ -160,5 +176,42 @@
     <footer>
         <p>&copy; 2024 Gripstone Security. Your Safety, Our Priority.</p>
     </footer>
+    <script>
+        // Script for header scroll and toggle class
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 0);
+        });
+    
+        // Script for smooth scrolling
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    
+        // Script for scroll-to-top button
+        const scrollButton = document.querySelector('.scroll-to-top');
+    
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 500) {
+                scrollButton.style.display = 'block';
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        });
+    
+        scrollButton.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    
 </body>
 </html>

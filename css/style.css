@@ -4,12 +4,68 @@ body {
     font-family: Arial, sans-serif; /* Use a common sans-serif font */
 }
 
+/* Updated Header Styling */
 header {
     background-color: #4CAF50; /* Primary Green */
     color: #FFFFFF; /* White text */
-    text-align: center;
-    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;    
 }
+
+header.scrolled {
+    height: 100px;
+    overflow-y: hidden;
+ 
+    transition: background-color 0.3s, height 3s;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 100px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Navigation Links */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding: 20px;
+    z-index: 1001;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+/* Smooth scrolling effect for navigation links */
+nav a {
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
 h1, h2, h3 {
     color: #f5efef; /* Primary Green */
 }

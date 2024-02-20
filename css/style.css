@@ -81,24 +81,7 @@ p {
     line-height: 1.5;
 }
 
-/* Media Query for Responsive Navigation */
-@media screen and (max-width: 768px) {
-    nav {
-        display: none;
-    }
 
-    .dropdown {
-        display: block;
-    }
-
-    .dropdown a {
-        display: block;
-    }
-    .dropdown-btn {
-        display: block;
-   
-    }
-}
 
 /* Dropdown Menu */
 .dropdown {
@@ -131,6 +114,24 @@ section {
     padding: 20px;
     background-color: #333333; /* Dark Gray */
     border-radius: 10px;
+}
+/* Media Query for Responsive Navigation */
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .dropdown a {
+        display: block;
+    }
+    .dropdown-btn {
+        display: block;
+   
+    }
 }
 @media screen and (max-width: 768px) {
     section {

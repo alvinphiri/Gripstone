@@ -10,7 +10,8 @@
     <body>
         <header>
             <div class="nav-logo">
-                 <h1>Gripstone Security</h1>
+                 <h1>Gripstone Security<button class="dropdown-btn">&#9776; Menu</button></h1>
+                 
             </div>
            
             <nav class="nav-links">
@@ -19,6 +20,13 @@
                 <a href="#services">Services</a>
                 <a href="#contact">Contact Us</a>
             </nav>
+            <button class="dropdown-btn">&#9776; Menu</button>
+            <div class="dropdown">
+                <a href="#vision">Vision</a>
+                <a href="#about">About Us</a>
+                <a hrefvision="#services">Services</a>
+                <a href="#contact">Contact Us</a>
+            </div>
         
             <!-- Scroll-to-Top Button -->
             <div class="scroll-to-top">&#9650; Scroll to Top</div>
@@ -26,7 +34,7 @@
 
         </header>
     
-        <section>
+        <section id="">
             <h2>Our Vision</h2>
             <p>Picture a world where safety isn't just a word, but a feeling. At Gripstone Security, our vision is to create a safe haven for your home and workplace, ensuring tranquility in every corner.</p>
         </section>
@@ -52,7 +60,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="about">
         <h2>About Us</h2>
         <p>Gripstone Security (Pvt) Ltd is a fully registered Zimbabwean company specializing in providing top-notch security services. We offer a range of services, including armed and unarmed guards, patrol and inspection, access control, and specialized client-requested services.</p>
         <p>Operating throughout Zimbabwe, we cater to diverse customers across various industries and segments. Our protective services, co-created with our clients, incorporate a high degree of technological innovation. This allows us to meet specific customer demands while maintaining a competitive pricing structure.</p>
@@ -76,7 +84,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="services">
         <h2>Our Services</h2>
         <div class="services-container">
             <div class="service-card">
@@ -140,6 +148,14 @@
                 behavior: 'smooth'
             });
         });
+        function toggleDropdown() {
+        var dropdown = document.querySelector('.dropdown');
+        dropdown.style.display = (dropdown.style.display === 'none' || dropdown.style.display === '') ? 'block' : 'none';
+    }
+
+    // Event listener for the dropdown button
+    document.querySelector('.dropdown-btn').addEventListener('click', toggleDropdown);
+
     </script>
     
 </body>

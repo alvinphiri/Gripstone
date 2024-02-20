@@ -16,7 +16,7 @@ header {
 
 header.scrolled {
     height: fit-content;
-    overflow-y: hidden;
+
     z-index: 5000;
     transition: background-color 0.3s, height 3s;
 }
@@ -81,6 +81,51 @@ p {
     line-height: 1.5;
 }
 
+/* Media Query for Responsive Navigation */
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .dropdown a {
+        display: block;
+    }
+    .dropdown-btn {
+        display: block;
+   
+    }
+}
+
+/* Dropdown Menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #ff0000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1002;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+.dropdown-btn {
+    display: none;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;}
 section {
     margin: 20px 0;
     padding: 20px;
